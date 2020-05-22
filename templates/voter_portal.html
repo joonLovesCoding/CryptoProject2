@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Voter Portal</title>
+    </head>
+    <body>
+        <div>
+			<form method="POST">
+				Voter ID: <input type="text" name="ID" required/>
+				<br>
+				<input type="submit">
+	        </form>
+    	</div>
+        {% if error %}
+			<p class="error"><strong>Error:</strong> {{error}}</p>
+		{% endif %}
+    </body>
+</html>

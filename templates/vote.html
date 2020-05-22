@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Cast your vote</title>
+    </head>
+    <body>
+        <div>
+			<form method="POST">
+                <input type="radio" id="candidate_a" name="vote" value="0">
+                <label for="candidate_a">Candidate A</label>
+                <br>
+                <input type="radio" id="candidate_b" name="vote" value="1">
+                <label for="candidate_b">Candidate B</label>
+                <br>
+                <input type="submit">
+            </form>
+    	</div>
+        {% if error %}
+			<p class="error"><strong>Error:</strong> {{error}}</p>
+		{% endif %}
+    </body>
+</html>
